@@ -60,7 +60,7 @@ const DragDrop = () => {
       </div>
       <div className={styles.Board} ref={addPicture}>
         {board.map((picture) => {
-          return <Picture url={picture.url} id={picture.id} />;
+          return <Picture key={picture.id} url={picture.url} id={picture.id} />;
         })}
       </div>
     </>
